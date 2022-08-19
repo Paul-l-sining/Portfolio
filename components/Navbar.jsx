@@ -6,10 +6,7 @@ import Link from "next/link";
 import {
   AiOutlineMenu,
   AiOutlineClose,
-  AiOutlineGithub,
-  AiOutlineLinkedin,
-  AiOutlineMail,
-  AiOutlineUser,
+  AiFillContacts,
   AiFillLinkedin,
   AiFillGithub,
   AiFillMail,
@@ -155,7 +152,7 @@ function Navbar() {
                 <AiFillMail size="25px" />
               </div>
               <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 duration-100">
-                <AiOutlineUser size="25px" />
+                <AiFillContacts size="25px" />
               </div>
             </div>
           </div>
