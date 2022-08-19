@@ -22,7 +22,7 @@ function Navbar() {
   };
 
   return (
-    <div className="fixed w-full shadow-xl z-[100]">
+    <div className="fixed w-full shadow-xl z-[100] bg-slate-100/90">
       <div className="flex justify-between items-center w-full h-full py-2 px-4 2xl:px-16">
         <Image
           className="object-cover"
