@@ -5,6 +5,7 @@ import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Home from "../components/Home";
 import About from "../components/About";
+import Skills from "../components/Skills";
 
 export default function Index() {
   return (
@@ -20,6 +21,7 @@ export default function Index() {
       <Navbar />
       <Home />
       <About />
+      <Skills />
     </div>
   );
 }
