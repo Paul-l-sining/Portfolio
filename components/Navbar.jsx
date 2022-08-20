@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -13,13 +13,18 @@ import {
 } from "react-icons/ai";
 
 function Navbar() {
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
 
   const handleToggle = (e) => {
     e.preventDefault();
 
     setToggle(!toggle);
   };
+
+  useEffect(() => {
+    if (!toggle) document.body.style.overflow = "hidden";
+    else document.body.style.overflow = "";
+  }, [toggle]);
 
   return (
     <div className="fixed w-full shadow-xl z-[100] bg-slate-100/90">
