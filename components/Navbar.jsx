@@ -12,8 +12,9 @@ import {
   AiFillMail,
 } from "react-icons/ai";
 
-function Navbar() {
+const Navbar = () => {
   const [toggle, setToggle] = useState(true);
+  const [shadow, setShadow] = useState(false);
 
   const handleToggle = (e) => {
     e.preventDefault();
@@ -21,21 +22,39 @@ function Navbar() {
     setToggle(!toggle);
   };
 
+  const handleShadow = () => {
+    if (window.scrollY >= 90) setShadow(true);
+    else setShadow(false);
+  };
+
+  // useEffect(() => {
+
+  // }, [toggle]);
+
   useEffect(() => {
     if (!toggle) document.body.style.overflow = "hidden";
     else document.body.style.overflow = "";
+    window.addEventListener("scroll", handleShadow);
   }, [toggle]);
 
   return (
-    <div className="fixed w-full shadow-xl z-[100] bg-slate-100/90">
+    <div
+      className={
+        shadow
+          ? "fixed w-full shadow-xl z-[100] bg-[#ecf0f3]/90 ease-in-out duration-300"
+          : "fixed w-full  z-[100] "
+      }
+    >
       <div className="flex justify-between items-center w-full h-full py-2 px-4 2xl:px-16">
-        <Image
-          className="object-cover cursor-pointer"
-          src="/../public/assets/logo.png"
-          alt="sigature logo"
-          width="125"
-          height="50"
-        />
+        <a href="/#home">
+          <Image
+            className="object-cover cursor-pointer"
+            src="/../public/assets/logo.png"
+            alt="sigature logo"
+            width="125"
+            height="50"
+          />
+        </a>
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
@@ -43,22 +62,22 @@ function Navbar() {
                 Home
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/#about">
               <li className="ml-10 text-sm uppercase hover:scale-105 duration-100	">
                 About
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/#skills">
               <li className="ml-10 text-sm uppercase hover:scale-105 duration-100	">
                 Skills
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/#projects">
               <li className="ml-10 text-sm uppercase hover:scale-105 duration-100	">
                 Projects
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/#contact">
               <li className="ml-10 text-sm uppercase hover:scale-105 duration-100	">
                 Contact
               </li>
@@ -89,13 +108,15 @@ function Navbar() {
           }
         >
           <div className="flex justify-between items-center w-full">
-            <Image
-              className="object-cover"
-              src="/../public/assets/logo.png"
-              alt="sigature logo"
-              width="110"
-              height="50"
-            />
+            <a href="/#home">
+              <Image
+                className="object-cover"
+                src="/../public/assets/logo.png"
+                alt="sigature logo"
+                width="110"
+                height="50"
+              />
+            </a>
 
             <div
               onClick={handleToggle}
@@ -120,22 +141,22 @@ function Navbar() {
                   Home
                 </li>
               </Link>
-              <Link href="/">
+              <Link href="/#about">
                 <li className="py-4 text-sm hover:scale-105 duration-100">
                   About
                 </li>
               </Link>
-              <Link href="/">
+              <Link href="/#skills">
                 <li className="py-4 text-sm hover:scale-105 duration-100">
                   Skills
                 </li>
               </Link>
-              <Link href="/">
+              <Link href="/#projects">
                 <li className="py-4 text-sm hover:scale-105 duration-100">
                   Projects
                 </li>
               </Link>
-              <Link href="/">
+              <Link href="/#contact">
                 <li className="py-4 text-sm hover:scale-105 duration-100">
                   Contact
                 </li>
@@ -165,6 +186,6 @@ function Navbar() {
       </div>
     </div>
   );
-}
+};
 
 export default Navbar;

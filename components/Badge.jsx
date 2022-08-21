@@ -5,7 +5,7 @@ import Image from "next/image";
 
 function Badge({ src, name }) {
   return (
-    <div className="p-6 shadow-xl hover:scale-105 ease-in duration-200">
+    <div className="p-6 shadow-xl hover:scale-105 ease-in duration-200 rounded-lg">
       <div className="grid grid-cols-2 gap-4 justify-center items-center">
         <div className="m-auto">
           <Image
