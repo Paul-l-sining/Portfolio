@@ -30,7 +30,7 @@ function Navbar() {
     <div className="fixed w-full shadow-xl z-[100] bg-slate-100/90">
       <div className="flex justify-between items-center w-full h-full py-2 px-4 2xl:px-16">
         <Image
-          className="object-cover"
+          className="object-cover cursor-pointer"
           src="/../public/assets/logo.png"
           alt="sigature logo"
           width="125"
@@ -147,16 +147,16 @@ function Navbar() {
               let's connect
             </p>
             <div className="flex justify-between items-center w-full my-4 sm:w-[80%]">
-              <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 duration-100">
+              <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-105 duration-100">
                 <AiFillLinkedin size="25px" />
               </div>
-              <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 duration-100">
+              <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-105 duration-100">
                 <AiFillGithub size="25px" />
               </div>
-              <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 duration-100">
+              <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-105 duration-100">
                 <AiFillMail size="25px" />
               </div>
-              <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 duration-100">
+              <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-105 duration-100">
                 <AiFillContacts size="25px" />
               </div>
             </div>
