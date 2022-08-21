@@ -5,7 +5,7 @@ import {
   AiFillGithub,
   AiFillLinkedin,
   AiFillMail,
-  AiFillContacts,
+  AiFillPhone,
 } from "react-icons/ai";
 
 function Home() {
@@ -36,7 +36,7 @@ function Home() {
               <AiFillMail size="25px" />
             </div>
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 duration-100">
-              <AiFillContacts size="25px" />
+              <AiFillPhone size="25px" />
             </div>
           </div>
         </div>

@@ -2,7 +2,7 @@
 
 import React from "react";
 import {
-  AiFillContacts,
+  AiFillPhone,
   AiFillLinkedin,
   AiFillGithub,
   AiFillMail,
@@ -43,7 +43,7 @@ function Contact() {
                 <AiFillMail size="25px" />
               </div>
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 md:p-5 cursor-pointer hover:scale-105 duration-100">
-                <AiFillContacts size="25px" />
+                <AiFillPhone size="25px" />
               </div>
             </div>
           </div>

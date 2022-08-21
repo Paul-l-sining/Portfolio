@@ -16,7 +16,7 @@ function Projects() {
             src="netflix.png"
             title="Netflix"
             details="ReactJS Firebase"
-            ProjectUrl="/"
+            ProjectUrl="/netflix"
           />
           <ProjectItem
             src="tbc.jpg"
