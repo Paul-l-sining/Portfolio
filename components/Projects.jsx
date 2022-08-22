@@ -15,26 +15,26 @@ function Projects() {
           <ProjectItem
             src="netflix.png"
             title="Netflix"
-            details="ReactJS Firebase"
+            details="ReactJS"
             ProjectUrl="/netflix"
           />
           <ProjectItem
             src="tbc.jpg"
             title="To Be Continued"
             details="Still in Dev..."
-            ProjectUrl="/"
+            ProjectUrl="/tbc"
           />
           <ProjectItem
             src="tbc.jpg"
             title="To Be Continued"
             details="Still in Dev..."
-            ProjectUrl="/"
+            ProjectUrl="/tbc"
           />
           <ProjectItem
             src="tbc.jpg"
             title="To Be Continued"
             details="Still in Dev..."
-            ProjectUrl="/"
+            ProjectUrl="/tbc"
           />
         </div>
       </div>

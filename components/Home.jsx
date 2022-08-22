@@ -30,7 +30,9 @@ function Home() {
               <AiFillLinkedin size="25px" />
             </div>
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 duration-100">
-              <AiFillGithub size="25px" />
+              <a href="https://github.com/Paul-l-sining" target="_blank">
+                <AiFillGithub size="25px" />
+              </a>
             </div>
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 duration-100">
               <AiFillMail size="25px" />
