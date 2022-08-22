@@ -27,10 +27,6 @@ const Navbar = () => {
     else setShadow(false);
   };
 
-  // useEffect(() => {
-
-  // }, [toggle]);
-
   useEffect(() => {
     if (!toggle) document.body.style.overflow = "hidden";
     else document.body.style.overflow = "";
