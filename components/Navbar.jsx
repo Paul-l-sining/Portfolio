@@ -22,13 +22,8 @@ const Navbar = () => {
 
   useEffect(() => {
     const allRoutes = ["/netflix", "/tbc"];
-    if (allRoutes.includes(router.asPath)) {
-      setNavBg("transparent");
-      setLinkColor("#ecf0f3");
-    } else {
-      setNavBg("#ecf0f3");
-      setLinkColor("#1f2937");
-    }
+    setNavBg(allRoutes.includes(router.asPath) ? "transparent" : "#ecf0f3");
+    setLinkColor(allRoutes.includes(router.asPath) ? "#ecf0f3" : "#1f2937");
   }, [router]);
 
   const handleToggle = (e) => {
@@ -67,7 +62,9 @@ const Navbar = () => {
           />
         </a>
         <div>
-          <ul style={{ color: `${linkColor }`}} className="hidden md:flex">
+          <ul 
+          style={{ color: `${linkColor }`}} 
+          className="hidden md:flex">
             <Link href="/">
               <li className="ml-10 text-sm uppercase hover:scale-105 duration-100	">
                 Home
