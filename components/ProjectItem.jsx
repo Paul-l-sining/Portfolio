@@ -9,7 +9,7 @@ function ProjectItem({ src, title, details, ProjectUrl }) {
     <div className="relative flex items-center p-4 justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hvr-shutter-in-horizontal">
       <Image
         className="object-cover rounded-xl group-hover:opacity-10 duration-500"
-        src={`/../public/showcases/${src}`}
+        src={`/showcases/${src}`}
         alt={title}
         height="1080px"
         width="1280px"
