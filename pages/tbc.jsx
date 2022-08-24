@@ -24,7 +24,7 @@ function tbc() {
           layout="fill"
           ƒ
           objectFit="cover"
-          src="/../public/showcases/tbc.jpg"
+          src="/showcases/tbc.jpg"
           alt="/netflix-showcase"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full translate-y-[-50%] text-white p-4 z-10">
