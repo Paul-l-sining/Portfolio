@@ -40,10 +40,10 @@ function netflix() {
           </p>
           <h2 className="py-2 text-gray-600">Overview</h2>
           <p className="py-2 text-gray-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-            veritatis reprehend derit ex, perferendis fuga explicabo, aliquid
-            eius ullam dolor ut cupiditate, perspiciatis facilis ipsa.
-            Laudantium natus laboriosam a sed soluta.
+            A netflix clone app made with ReactJS as frontend and firebase as backend. 
+            I chose to make this app is because it largely boosted my skills on many aspects such as CSS, React, Typescript, API key, database authorization and CRUD and more. 
+            The user can sign in / sign up an account with their email and password, and add the movies to their favourite list, just like how you do it on Netflix. 
+            Thanks to the Firebase, the user can always log back into their account and check the listed movies as they are all stored in the backend instead of the memory.
           </p>
           <a href="https://netflix-clone-4f0fa.firebaseapp.com" target="_blank">
             <button className="px-8 py-2 mt-4 mr-8 hover:scale-105 duration-300">
