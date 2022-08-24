@@ -45,13 +45,14 @@ function netflix() {
             The user can sign in / sign up an account with their email and password, and add the movies to their favourite list, just like how you do it on Netflix. 
             Thanks to the Firebase, the user can always log back into their account and check the listed movies as they are all stored in the backend instead of the memory.
           </p>
-          <a href="https://netflix-clone-4f0fa.firebaseapp.com" target="_blank">
+          <a href="https://netflix-clone-4f0fa.firebaseapp.com" rel="noreferrer" target="_blank">
             <button className="px-8 py-2 mt-4 mr-8 hover:scale-105 duration-300">
               Demo
             </button>
           </a>
           <a
             href="https://github.com/Paul-l-sining/Netflix-Clone"
+            rel="noreferrer"
             target="_blank"
           >
             <button className="px-8 py-2 mt-4 hover:scale-105 duration-300">

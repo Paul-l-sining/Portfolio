@@ -23,6 +23,7 @@ function ContactIcons({ size, extraFeatures }) {
       <a
         href="https://www.linkedin.com/in/paul-sining-lu-8a438820a/"
         target="_blank"
+        rel="noreferrer"
       >
         <div
           className={`rounded-full shadow-lg shadow-gray-400 p-${size} cursor-pointer hover:scale-105 duration-100`}
@@ -30,7 +31,7 @@ function ContactIcons({ size, extraFeatures }) {
           <AiFillLinkedin size="25px" />
         </div>
       </a>
-      <a href="https://github.com/Paul-l-sining" target="_blank">
+      <a href="https://github.com/Paul-l-sining" target="_blank" rel="noreferrer">
         <div
           className={`rounded-full shadow-lg shadow-gray-400 p-${size} cursor-pointer hover:scale-105 duration-100`}
         >
