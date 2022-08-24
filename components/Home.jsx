@@ -1,12 +1,6 @@
 /** @format */
 
 import React from "react";
-import {
-  AiFillGithub,
-  AiFillLinkedin,
-  AiFillMail,
-  AiFillPhone,
-} from "react-icons/ai";
 import ContactIcons from "./ContactIcons";
 
 function Home() {

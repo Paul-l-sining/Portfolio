@@ -6,7 +6,6 @@ import InputField from "./InputField";
 import TextAreaField from "./TextAreaField";
 import emailjs from "@emailjs/browser";
 import {
-  NotificationContainer,
   NotificationManager,
 } from "react-notifications";
 
@@ -17,15 +16,16 @@ function ContactForm() {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [load, setLoad] = useState(false);
-
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    
     setLoad(true);
 
+
     const response = await emailjs.send(
-      "service_3tpqlch",
-      "template_nflrpqn",
+      process.env.EMAIL_JS_SERVICE_ID,
+      process.env.EMAIL_JS_TEMPLATE_ID,
       {
         from_name: { name },
         to_name: "Paul",
@@ -35,7 +35,7 @@ function ContactForm() {
       MESSAGE: ${message}
       `,
       },
-      "V9tMB1op_2eyQ9H-d"
+      process.env.EMAIL_JS_PUBLIC_KEY
     );
 
     response.status == "200"
