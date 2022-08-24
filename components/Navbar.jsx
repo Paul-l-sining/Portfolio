@@ -44,7 +44,7 @@ const Navbar = () => {
 
   return (
     <div
-      style={{ background: `${navBg}`, opacity: 0.9 }}
+      style={{ background: `${navBg}`, opacity: `${toggle ? "0.9" : "1"}` }}
       className={
         shadow
           ? "fixed w-full shadow-xl z-[100] bg-[#ecf0f3]/90 ease-in-out duration-300"
@@ -95,7 +95,9 @@ const Navbar = () => {
             className="md:hidden cursor-pointer hover:scale-105 duration-100"
             onClick={handleToggle}
           >
-            <AiOutlineMenu size="25px" />
+            <AiOutlineMenu 
+            style={{ color: `${linkColor }`}} 
+            size="25px" />
           </div>
         </div>
       </div>
