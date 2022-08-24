@@ -52,7 +52,7 @@ const Navbar = () => {
         <Link href="/#home">
           <Image
             className="object-cover cursor-pointer"
-            src="/../public/assets/logo.png"
+            src="/assets/logo.png"
             alt="sigature logo"
             width="125"
             height="50"
