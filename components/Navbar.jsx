@@ -136,7 +136,7 @@ const Navbar = () => {
           <div className="border-b border-gray-300 my-4">
             <p className="w-[85%] md:w-[90%] py-4">
               <span className="italic">
-                "Dedication makes dreams come true."
+              &quot;Dedication makes dreams come true.&quot;
               </span>
               -- Kobe Bryant
             </p>
@@ -172,7 +172,7 @@ const Navbar = () => {
           </div>
           <div className="mt-40 ">
             <p className="uppercase tracking-widest text-[#5651e5]">
-              let's connect
+              let&apos;s connect
             </p>
             <ContactIcons size='5'/>
           </div>

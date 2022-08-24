@@ -13,7 +13,7 @@ function About() {
           <h2 className="py-2 text-gray-600">Who I Am</h2>
           <p className="py-2 text-gray-600">
             I was born and raised in Shanghai, China. I came to the US to pursue
-            my bachelor's degree at University of San Diego in the class of
+            my bachelor&apos;s degree at University of San Diego in the class of
             2019. I like to play many sports like tennis, basketball, surfing,
             snowboarding... and still trying to learn some new sports.
           </p>
