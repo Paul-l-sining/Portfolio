@@ -26,14 +26,14 @@ function ContactIcons({ size, extraFeatures }) {
         rel="noreferrer"
       >
         <div
-          className={`rounded-full shadow-lg shadow-gray-400 p-${size} cursor-pointer hover:scale-105 duration-100`}
+          className={`rounded-full shadow-lg shadow-gray-400 ${size} cursor-pointer hover:scale-105 duration-100`}
         >
           <AiFillLinkedin size="25px" />
         </div>
       </a>
       <a href="https://github.com/Paul-l-sining" target="_blank" rel="noreferrer">
         <div
-          className={`rounded-full shadow-lg shadow-gray-400 p-${size} cursor-pointer hover:scale-105 duration-100`}
+          className={`rounded-full shadow-lg shadow-gray-400 ${size} cursor-pointer hover:scale-105 duration-100`}
         >
           <AiFillGithub size="25px" />
         </div>
@@ -46,7 +46,7 @@ function ContactIcons({ size, extraFeatures }) {
         }}
       >
         <div
-          className={`rounded-full shadow-lg shadow-gray-400 p-${size} cursor-pointer hover:scale-105 duration-100`}
+          className={`rounded-full shadow-lg shadow-gray-400 ${size} cursor-pointer hover:scale-105 duration-100`}
           onClick={() => {
             NotificationManager.success(
               "Copied email to the clipboard",
@@ -65,7 +65,7 @@ function ContactIcons({ size, extraFeatures }) {
         }}
       >
         <div
-          className={`rounded-full shadow-lg shadow-gray-400 p-${size} cursor-pointer hover:scale-105 duration-100`}
+          className={`rounded-full shadow-lg shadow-gray-400 ${size} cursor-pointer hover:scale-105 duration-100`}
           onClick={() => {
             NotificationManager.success(
               "Copied phone to the clipboard",

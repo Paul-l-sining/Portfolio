@@ -174,7 +174,7 @@ const Navbar = () => {
             <p className="uppercase tracking-widest text-[#5651e5]">
               let&apos;s connect
             </p>
-            <ContactIcons size='5'/>
+            <ContactIcons size='p-5'/>
           </div>
         </div>
       </div>

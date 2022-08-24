@@ -28,7 +28,7 @@ function Contact() {
             <p className="pb-40">Contact me and let&apos;s talk.</p>
             <p className="py-4 uppercase">Connect with me</p>
 
-            <ContactIcons size='5 md:p-6' extraFeatures='m-auto max-w-[420px] py-4 ' />
+            <ContactIcons size='p-5 md:p-6' extraFeatures='m-auto max-w-[420px] py-4 ' />
 
           </div>
           {/* Right */}

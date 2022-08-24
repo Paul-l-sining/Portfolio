@@ -21,7 +21,7 @@ function Home() {
             front-end web applications while learning back-end technologies.
           </p>
 
-          <ContactIcons size='5' extraFeatures='max-w-[330px] m-auto md:space-x-10 py-4'/>
+          <ContactIcons size='p-5 md:p-6' extraFeatures='max-w-[330px] m-auto md:space-x-10 py-4'/>
         </div>
       </div>
     </div>
