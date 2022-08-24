@@ -9,10 +9,7 @@ import {
   AiFillMail,
 } from "react-icons/ai";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import {
-  NotificationContainer,
-  NotificationManager,
-} from "react-notifications";
+import { NotificationManager } from "react-notifications";
 
 function ContactIcons({ size, extraFeatures }) {
   const email = "paul.l.sining@gmail.com";
@@ -50,7 +47,10 @@ function ContactIcons({ size, extraFeatures }) {
         <div
           className={`rounded-full shadow-lg shadow-gray-400 p-${size} cursor-pointer hover:scale-105 duration-100`}
           onClick={() => {
-            NotificationManager.success("Copied email to the clipboard", "SUCCESS");
+            NotificationManager.success(
+              "Copied email to the clipboard",
+              "SUCCESS"
+            );
           }}
         >
           <AiFillMail size="25px" />
@@ -66,14 +66,15 @@ function ContactIcons({ size, extraFeatures }) {
         <div
           className={`rounded-full shadow-lg shadow-gray-400 p-${size} cursor-pointer hover:scale-105 duration-100`}
           onClick={() => {
-            NotificationManager.success("Copied phone to the clipboard", "SUCCESS");
+            NotificationManager.success(
+              "Copied phone to the clipboard",
+              "SUCCESS"
+            );
           }}
-       >
+        >
           <AiFillPhone size="25px" />
         </div>
       </CopyToClipboard>
-
-      <NotificationContainer />
     </div>
   );
 }

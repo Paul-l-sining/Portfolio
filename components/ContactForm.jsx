@@ -49,6 +49,13 @@ function ContactForm() {
         );
 
     setLoad(false);
+    
+    setName("");
+    setNumber("");
+    setEmail("");
+    setSubject("");
+    setMessage("");
+
   };
 
   return (
@@ -94,7 +101,6 @@ function ContactForm() {
           Send Message
         </button>
       </div>
-      <NotificationContainer />
     </form>
     
   );
