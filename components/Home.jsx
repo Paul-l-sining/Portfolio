@@ -22,7 +22,6 @@ function Home() {
           </p>
 
           <ContactIcons size='5 md:p-6' extraFeatures='max-w-[330px] m-auto md:space-x-10 py-4'/>
-
         </div>
       </div>
     </div>
