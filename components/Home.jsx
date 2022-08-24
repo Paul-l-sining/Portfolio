@@ -7,6 +7,7 @@ import {
   AiFillMail,
   AiFillPhone,
 } from "react-icons/ai";
+import ContactIcons from "./ContactIcons";
 
 function Home() {
   return (
@@ -25,22 +26,9 @@ function Home() {
             digital experience. Currently I'm focused on building reponsive
             front-end web applications while learning back-end technologies.
           </p>
-          <div className="flex items-center justify-between max-w-[330px] m-auto space-x-10 py-4">
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 duration-100">
-              <AiFillLinkedin size="25px" />
-            </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 duration-100">
-              <a href="https://github.com/Paul-l-sining" target="_blank">
-                <AiFillGithub size="25px" />
-              </a>
-            </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 duration-100">
-              <AiFillMail size="25px" />
-            </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 duration-100">
-              <AiFillPhone size="25px" />
-            </div>
-          </div>
+
+          <ContactIcons size='5 md:p-6' extraFeatures='max-w-[330px] m-auto md:space-x-10 py-4'/>
+
         </div>
       </div>
     </div>

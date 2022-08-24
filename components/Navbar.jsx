@@ -6,12 +6,9 @@ import Link from "next/link";
 import {
   AiOutlineMenu,
   AiOutlineClose,
-  AiFillPhone,
-  AiFillLinkedin,
-  AiFillGithub,
-  AiFillMail,
 } from "react-icons/ai";
 import { useRouter } from "next/router";
+import ContactIcons from "./ContactIcons";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(true);
@@ -177,20 +174,7 @@ const Navbar = () => {
             <p className="uppercase tracking-widest text-[#5651e5]">
               let's connect
             </p>
-            <div className="flex justify-between items-center w-full my-4 sm:w-[80%]">
-              <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-105 duration-100">
-                <AiFillLinkedin size="25px" />
-              </div>
-              <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-105 duration-100">
-                <AiFillGithub size="25px" />
-              </div>
-              <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-105 duration-100">
-                <AiFillMail size="25px" />
-              </div>
-              <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-105 duration-100">
-                <AiFillPhone size="25px" />
-              </div>
-            </div>
+            <ContactIcons size='5'/>
           </div>
         </div>
       </div>

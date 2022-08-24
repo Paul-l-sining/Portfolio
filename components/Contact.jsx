@@ -1,15 +1,10 @@
 /** @format */
 
 import React from "react";
-import {
-  AiFillPhone,
-  AiFillLinkedin,
-  AiFillGithub,
-  AiFillMail,
-} from "react-icons/ai";
 import { BsChevronDoubleUp } from "react-icons/bs";
 import ContactForm from "./ContactForm";
 import Link from "next/link";
+import ContactIcons from "./ContactIcons";
 
 function Contact() {
   return (
@@ -32,20 +27,9 @@ function Contact() {
             <p>I am available for freelance or full-time positions.</p>
             <p className="pb-40">Contact me and let's talk.</p>
             <p className="py-4 uppercase">Connect with me</p>
-            <div className="flex items-center justify-between m-auto max-w-[420px] py-4">
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 md:p-5 cursor-pointer hover:scale-105 duration-100">
-                <AiFillLinkedin size="25px" />
-              </div>
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 md:p-5 cursor-pointer hover:scale-105 duration-100">
-                <AiFillGithub size="25px" />
-              </div>
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 md:p-5 cursor-pointer hover:scale-105 duration-100">
-                <AiFillMail size="25px" />
-              </div>
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 md:p-5 cursor-pointer hover:scale-105 duration-100">
-                <AiFillPhone size="25px" />
-              </div>
-            </div>
+
+            <ContactIcons size='5 md:p-6' extraFeatures='m-auto max-w-[420px] py-4' />
+
           </div>
           {/* Right */}
           <div className="lg:col-span-3 p-8 h-full w-full shadow-xl relative shadow-gray-400 rounded-xl hover:scale-105 duration-100 ease-in">
