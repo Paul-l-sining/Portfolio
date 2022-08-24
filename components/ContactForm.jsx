@@ -4,6 +4,11 @@ import React from "react";
 import { useState } from "react";
 import InputField from "./InputField";
 import TextAreaField from "./TextAreaField";
+import emailjs from "@emailjs/browser";
+import {
+  NotificationContainer,
+  NotificationManager,
+} from "react-notifications";
 
 function ContactForm() {
   const [name, setName] = useState("");
@@ -11,10 +16,39 @@ function ContactForm() {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+  const [load, setLoad] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Submit");
+
+    setLoad(true);
+
+    const response = await emailjs.send(
+      "service_3tpqlch",
+      "template_nflrpqn",
+      {
+        from_name: { name },
+        to_name: "Paul",
+        message: `SUBJECT: ${subject} \n
+      EMAIL: ${email} \n
+      PHONE NUMBER: ${number} \n
+      MESSAGE: ${message}
+      `,
+      },
+      "V9tMB1op_2eyQ9H-d"
+    );
+
+    response.status == "200"
+      ? NotificationManager.success(
+          "Inquiry has been sent successfully",
+          "SUCCESS"
+        )
+      : NotificationManager.error(
+          "Something went wrong, please try again later",
+          "FAILURE"
+        );
+
+    setLoad(false);
   };
 
   return (
@@ -53,13 +87,16 @@ function ContactForm() {
 
       <div className="py-2">
         <button
-          className="w-full p-4 text-gray-100 mt-4 bg-[#5651e5]"
+          className={`w-full p-4 text-gray-100 mt-4 ${!load ? "bg-[#5651e5]" : "bg-[#6d6ab7]"}`}
           type="submit"
+          disabled={load}
         >
           Send Message
         </button>
       </div>
+      <NotificationContainer />
     </form>
+    
   );
 }
 

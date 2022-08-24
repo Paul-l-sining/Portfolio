@@ -15,6 +15,7 @@ function TextAreaField({ label, title, value, handleChange }) {
         value={value}
         id={label}
         onChange={handleChange}
+        required
       />
     </div>
   );

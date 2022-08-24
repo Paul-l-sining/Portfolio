@@ -13,7 +13,6 @@ import {
   NotificationContainer,
   NotificationManager,
 } from "react-notifications";
-import { useEffect } from "react";
 
 function ContactIcons({ size, extraFeatures }) {
   const email = "paul.l.sining@gmail.com";
