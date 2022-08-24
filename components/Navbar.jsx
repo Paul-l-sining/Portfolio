@@ -49,7 +49,7 @@ const Navbar = () => {
       }
     >
       <div className="flex justify-between items-center w-full h-full py-2 px-4 2xl:px-16">
-        <a href="/#home">
+        <Link href="/#home">
           <Image
             className="object-cover cursor-pointer"
             src="/../public/assets/logo.png"
@@ -57,7 +57,7 @@ const Navbar = () => {
             width="125"
             height="50"
           />
-        </a>
+        </Link>
         <div>
           <ul 
           style={{ color: `${linkColor }`}} 
@@ -115,7 +115,7 @@ const Navbar = () => {
           }
         >
           <div className="flex justify-between items-center w-full">
-            <a href="/#home">
+            <Link href="/#home">
               <Image
                 className="object-cover"
                 src="/../public/assets/logo.png"
@@ -123,7 +123,7 @@ const Navbar = () => {
                 width="110"
                 height="50"
               />
-            </a>
+            </Link>
 
             <div
               onClick={handleToggle}
