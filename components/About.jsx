@@ -6,7 +6,7 @@ import Image from "next/image";
 function About() {
   return (
     <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
-      <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
+      <div className="max-w-[1240px] m-auto md:grid md:grid-cols-3 gap-8">
         <div className="col-span-2">
           <p className="py-4 uppercase text-xl tracking-widest text-[#5651e5]">
             About
@@ -37,10 +37,14 @@ function About() {
           </p>
         </div>
         <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 duration-100 relative">
-          <img
+          <Image
             className="rounded-xl"
             src="https://images.unsplash.com/photo-1520085601670-ee14aa5fa3e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
             alt="programming image"
+            layout="responsive"
+            objectFit="cover"
+            width="360px"
+            height="240px"
           />
           <div className="absolute left-0 top-0 rounded-xl w-full h-full bg-slate-400/20"></div>
         </div>

@@ -3,7 +3,7 @@
  * @type {import('next').NextConfig}
  */
 
-const nextConfig = {
+module.exports = {
   reactStrictMode: true,
   swcMinify: true,
   env: {
@@ -11,6 +11,7 @@ const nextConfig = {
     EMAIL_JS_TEMPLATE_ID: 'template_nflrpqn',
     EMAIL_JS_PUBLIC_KEY: 'V9tMB1op_2eyQ9H-d',
   },
+  images: {
+    domains: ['images.unsplash.com'],
+  },
 };
-
-module.exports = nextConfig;
