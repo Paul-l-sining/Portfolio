@@ -71,12 +71,16 @@ function ContactForm() {
         title="Phone number"
         value={number}
         handleChange={(e) => setNumber(e.target?.value)}
+        pattern="[0-9]{9,}"
+        hint="Must be at lease 9 digits"
       />
       <InputField
         label="email"
         title="Email"
         value={email}
         handleChange={(e) => setEmail(e.target?.value)}
+        pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}"
+        hint="Must be a valid email address"
       />
       <InputField
         label="subject"
