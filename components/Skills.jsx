@@ -24,9 +24,9 @@ function Skills() {
         </div>
         <h2 className="py-4 text-gray-500">Backend</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 py-8">
+          <Badge src="node-js.png" name="Node.js" />
           <Badge src="python.png" name="Python" />
           <Badge src="java.png" name="Java" />
-          {/* <Badge src="node-js.png" name="NodeJS" /> */}
           {/* <Badge src="django.png" name="Django" /> */}
           {/* <Badge src="spring-boot.png" name="SpringBoot" /> */}
           <Badge src="database.png" name="SQL" />
