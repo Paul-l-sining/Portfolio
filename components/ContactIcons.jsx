@@ -21,7 +21,7 @@ function ContactIcons({ size, extraFeatures }) {
       className={`flex justify-between items-center w-full my-4 ${extraFeatures}`}
     >
       <a
-        href="https://www.linkedin.com/in/paul-sining-lu-8a438820a/"
+        href="https://www.linkedin.com/in/paul-lu-8a438820a/"
         target="_blank"
         rel="noreferrer"
       >
