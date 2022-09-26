@@ -31,7 +31,7 @@ function ContactIcons({ size, extraFeatures }) {
           <AiFillLinkedin size="25px" />
         </div>
       </a>
-      <a href="https://github.com/Paul-l-sining" target="_blank" rel="noreferrer">
+      <a href="https://github.com/pawpaw2022" target="_blank" rel="noreferrer">
         <div
           className={`rounded-full shadow-lg shadow-gray-400 ${size} cursor-pointer hover:scale-105 duration-100`}
         >
