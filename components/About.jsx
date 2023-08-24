@@ -44,7 +44,11 @@ function About() {
               Check out some of my latest projects.
             </p>
           </Link>
-          <a href="https://github.com/pawpaw2022" target="_blank">
+          <a
+            href="https://github.com/pawpaw2022"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <p className="py-2 text-gray-600 underline cursor-pointer">
               Check out my Github
             </p>
