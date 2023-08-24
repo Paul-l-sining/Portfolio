@@ -4,7 +4,7 @@ import React from "react";
 
 function Rating({ rating }) {
   return (
-    <div class="flex items-center space-x-1 mb-4 mx-auto">
+    <div className="flex items-center space-x-1 mb-4 mx-auto">
       {[...Array(rating)].map((_, i) => (
         <svg
           className="w-4 h-4 text-yellow-300"
