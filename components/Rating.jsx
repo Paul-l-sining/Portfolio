@@ -7,7 +7,7 @@ function Rating({ rating }) {
     <div class="flex items-center space-x-1 mb-4 mx-auto">
       {[...Array(rating)].map((_, i) => (
         <svg
-          class="w-4 h-4 text-yellow-300"
+          className="w-4 h-4 text-yellow-300"
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           fill="currentColor"
