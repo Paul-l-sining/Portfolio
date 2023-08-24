@@ -5,7 +5,7 @@ import Image from "next/image";
 
 function About() {
   return (
-    <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
+    <div id="about" className="w-full md:h-screen p-2 flex items-center py-10">
       <div className="max-w-[1240px] m-auto md:grid md:grid-cols-3 gap-8">
         <div className="col-span-2">
           <p className="py-4 uppercase text-xl tracking-widest text-[#5651e5]">
@@ -13,28 +13,41 @@ function About() {
           </p>
           <h2 className="py-2 text-gray-600">Who I Am</h2>
           <p className="py-2 text-gray-600">
-            I was born and raised in Shanghai, China. I came to the US to pursue
-            my bachelor&apos;s degree at University of San Diego in the class of
-            2019. I like to play many sports like tennis, basketball, surfing,
-            snowboarding... and still trying to learn some new sports.
+            I am a new graduate from University of San Diego (USD) with a
+            bachelor&apos;s degree in Computer Science in Dec 2023.{" "}
+            <span className="font-bold">
+              I am currently looking for a full-time software engineer position.
+            </span>
           </p>
-          <p className="py-2 text-gray-600 italic">
-            Fun fact about me: I can cook the best roast chicken.
-          </p>
+
           <p className="py-2 text-gray-600">
             I have been learning coding for 5 years, and I have learned many
             areas of technologies. I knew my passion lied in the Web
-            Development. I enjoy how a website is established piece by piece. I
-            have spent most of my spare time learning the frontend, now I can
-            build a fully responsive and interactive frontend website using
-            React. In the summer of 2022, I started freelancing and helped a
-            friend of mine build his e-commerce company website. Right now I am
-            shifting my focus on the backend and trying to build more
-            professional website.
+            Development. I have completed many projects both in school and
+            outside of school in the past including frontend applications,
+            backend services, and full stack applications. I am also familiar
+            with cloud services such as AWS and deployment tools such as Docker
+            and Kubernetes.
           </p>
-          <p className="py-2 text-gray-600 underline cursor-pointer">
-            Check out some of my latest projects.
+
+          <p className="py-2 text-gray-600">
+            I am a quick learner and I am always eager to learn new things. In
+            school I have learned many computer basics such as data structures,
+            algorithms, and operating systems. Yet to become a fullstack
+            developer, those are not enough. So I have been self-learning many
+            other tech stack to adapt to the industry needs.
           </p>
+
+          <a href="/#projects">
+            <p className="py-2 text-gray-600 underline cursor-pointer">
+              Check out some of my latest projects.
+            </p>
+          </a>
+          <a href="https://github.com/pawpaw2022" target="_blank">
+            <p className="py-2 text-gray-600 underline cursor-pointer">
+              Check out my Github
+            </p>
+          </a>
         </div>
         <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 duration-100 relative">
           <Image

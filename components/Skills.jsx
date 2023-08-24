@@ -13,32 +13,36 @@ function Skills() {
         <h2 className="py-4">What I Can Do</h2>
         <h2 className="py-4 text-gray-500">Frontend</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 py-8">
-          <Badge src="html.png" name="HTML" />
-          <Badge src="css.png" name="CSS" />
+          {/* <Badge src="html.png" name="HTML" /> */}
+          {/* <Badge src="css.png" name="CSS" /> */}
           <Badge src="javascript.png" name="JavaScript" />
           <Badge src="typescript.png" name="TypeScript" />
           <Badge src="react.png" name="React" />
           <Badge src="nextjs.png" name="Next.js" />
-          <Badge src="bootstrap.png" name="Bootstrap" />
-          <Badge src="tailwind-css.png" name="TailwindCSS" />
+          {/* <Badge src="bootstrap.png" name="Bootstrap" /> */}
+          {/* <Badge src="tailwind-css.png" name="TailwindCSS" /> */}
         </div>
         <h2 className="py-4 text-gray-500">Backend</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 py-8">
           <Badge src="node-js.png" name="Node.js" />
+          <Badge src="golang.svg" name="Go" />
           <Badge src="python.png" name="Python" />
-          <Badge src="java.png" name="Java" />
+          {/* <Badge src="java.png" name="Java" /> */}
           {/* <Badge src="django.png" name="Django" /> */}
           {/* <Badge src="spring-boot.png" name="SpringBoot" /> */}
           <Badge src="database.png" name="SQL" />
           <Badge src="mongodb.png" name="MongoDB" />
+          <Badge src="redis.svg" name="Redis" />
         </div>
         <h2 className="py-4 text-gray-500">Tools</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 py-8">
-          <Badge src="firebase.png" name="Firebase" />
-          {/* <Badge src="docker.png" name="Docker" /> */}
+          {/* <Badge src="firebase.png" name="Firebase" /> */}
+          <Badge src="docker.png" name="Docker" />
+          <Badge src="k8s.svg" name="Kubenetes" />
+          <Badge src="aws.svg" name="AWS" />
+          <Badge src="gql.svg" name="GraphQL" />{" "}
           <Badge src="git.png" name="Git" />
           <Badge src="linux.png" name="Linux" />
-          <Badge src="more.png" name="More" />
         </div>
       </div>
     </div>

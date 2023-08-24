@@ -14,26 +14,26 @@ function Projects() {
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
             src="netflix.png"
-            title="Netflix"
-            details="ReactJS"
+            title="To-do List"
+            details="HTML, CSS, JavaScript"
             ProjectUrl="/netflix"
           />
           <ProjectItem
             src="tbc.jpg"
-            title="To Be Continued"
-            details="Still in Dev..."
+            title="Pokedex"
+            details="Next13 Frontend"
             ProjectUrl="/tbc"
           />
           <ProjectItem
             src="tbc.jpg"
-            title="To Be Continued"
-            details="Still in Dev..."
+            title="FaceBowl"
+            details="GraphQL FullStack"
             ProjectUrl="/tbc"
           />
           <ProjectItem
             src="tbc.jpg"
-            title="To Be Continued"
-            details="Still in Dev..."
+            title="SimpleBank"
+            details="Go Backend"
             ProjectUrl="/tbc"
           />
         </div>
