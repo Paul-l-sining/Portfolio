@@ -18,13 +18,13 @@ function Skills() {
           <Badge src="javascript.png" name="JavaScript" />
           <Badge src="typescript.png" name="TypeScript" />
           <Badge src="react.png" name="React" />
-          <Badge src="nextjs.png" name="Next.js" />
+          <Badge src="nextjs.png" name="Next" />
           {/* <Badge src="bootstrap.png" name="Bootstrap" /> */}
           {/* <Badge src="tailwind-css.png" name="TailwindCSS" /> */}
         </div>
         <h2 className="py-4 text-gray-500">Backend</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 py-8">
-          <Badge src="node-js.png" name="Node.js" />
+          <Badge src="node-js.png" name="Node" />
           <Badge src="golang.svg" name="Go" />
           <Badge src="python.png" name="Python" />
           {/* <Badge src="java.png" name="Java" /> */}

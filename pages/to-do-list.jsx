@@ -33,25 +33,36 @@ function netflix() {
         </div>
       </div>
 
-      <div className="max-w-[1240px] p-2 grid lg:grid-cols-5 gap-8 pt-8 mx-2">
+      <div className="max-w-[1240px] p-2 grid lg:grid-cols-5 gap-8 pt-8 mx-6">
         <div className="lg:col-span-4">
           <p className="text-xl tracking-wider uppercase text-[#5651e5]">
             Project
           </p>
           <h2 className="py-2 text-gray-600">Overview</h2>
           <p className="py-2 text-gray-600">
-            A netflix clone app made with ReactJS as frontend and firebase as
-            backend. I chose to make this app is because it largely boosted my
-            skills on many aspects such as CSS, React, Typescript, API key,
-            database authorization and CRUD and more. The user can sign in /
-            sign up an account with their email and password, and add the movies
-            to their favourite list, just like how you do it on Netflix. Thanks
-            to the Firebase, the user can always log back into their account and
-            check the listed movies as they are all stored in the backend
-            instead of the memory.
+            A simple to-do list app built with vanilla JavaScript. Just like any
+            other beginner who just started to learn coding, I chose this app to
+            strengthen the fundementals. But unlike any other to-do lists that
+            you can easily find on the internet, I added some
+            <span className="text-[#5651e5] font-bold uppercase">
+              {" "}
+              special sauce{" "}
+            </span>{" "}
+            to stand out from the crowd.
           </p>
+
+          <h2 className="py-2 text-gray-600 text-2xl">Features</h2>
+          <ul className="list-disc ml-5">
+            <li>Allow Create/Delete a To-Do on the task board.</li>
+            <li>Allow Drag-n-Drop to sort the To-Dos.</li>
+            <li className="text-[#5651e5]">
+              Use trigonometry to calculate the angle so the Simpson&apos;s
+              eyeballs will always follow the mouse cursor.
+            </li>
+          </ul>
+
           <a
-            href="https://netflix-clone-4f0fa.firebaseapp.com"
+            href="https://lucent-tulumba-bce44d.netlify.app/"
             rel="noreferrer"
             target="_blank"
           >
@@ -60,7 +71,7 @@ function netflix() {
             </button>
           </a>
           <a
-            href="https://github.com/Paul-l-sining/Netflix-Clone"
+            href="https://github.com/pawpaw2022/vanilla-todo-list"
             rel="noreferrer"
             target="_blank"
           >
@@ -75,19 +86,13 @@ function netflix() {
             <p className="text-center font-bold pb-2">Technologies</p>
             <div className="grid grid-cols-3 lg:grid-cols-1">
               <p className="flex text-gray-600 py-2 items-center">
-                <IoMdRadioButtonOn className="pr-1" /> React
+                <IoMdRadioButtonOn className="pr-1" /> HTML5
               </p>
               <p className="flex text-gray-600 py-2 items-center">
-                <IoMdRadioButtonOn className="pr-1" /> Tailwind
+                <IoMdRadioButtonOn className="pr-1" /> Sass
               </p>
               <p className="flex text-gray-600 py-2 items-center">
-                <IoMdRadioButtonOn className="pr-1" /> Typescript
-              </p>
-              <p className="flex text-gray-600 py-2 items-center">
-                <IoMdRadioButtonOn className="pr-1" /> Firebase
-              </p>
-              <p className="flex text-gray-600 py-2 items-center">
-                <IoMdRadioButtonOn className="pr-1" /> The Movie Database API
+                <IoMdRadioButtonOn className="pr-1" /> JavaScript
               </p>
             </div>
           </div>

@@ -28,7 +28,7 @@ function Contact() {
               height="326px"
             />
             <h2 className="py-2">Paul Lu</h2>
-            <p className="pb-8">Front-End Developer</p>
+            <p className="pb-8">Full Stack Developer</p>
             <p>I am available for freelance or full-time positions.</p>
             <p className="pb-40">Contact me and let&apos;s talk.</p>
             <p className="py-4 uppercase">Connect with me</p>

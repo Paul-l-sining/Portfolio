@@ -19,7 +19,7 @@ const Navbar = () => {
       "/to-do-list",
       "/facebowl",
       "/simplebank",
-      "pokedex",
+      "/pokedex",
       "/tbc",
     ];
     setNavBg(allRoutes.includes(router.asPath) ? "transparent" : "#ecf0f3");

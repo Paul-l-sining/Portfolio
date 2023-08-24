@@ -17,24 +17,28 @@ function Projects() {
             title="To-do List"
             details="HTML, CSS, JavaScript"
             ProjectUrl="/to-do-list"
+            rating={2}
           />
           <ProjectItem
-            src="tbc.jpg"
+            src="pokedex.png"
             title="Pokedex"
             details="Next13 Frontend"
-            ProjectUrl="/tbc"
+            ProjectUrl="/pokedex"
+            rating={3}
           />
           <ProjectItem
-            src="tbc.jpg"
+            src="facebowl.png"
             title="FaceBowl"
             details="GraphQL FullStack"
-            ProjectUrl="/tbc"
+            ProjectUrl="/facebowl"
+            rating={4}
           />
           <ProjectItem
-            src="tbc.jpg"
+            src="simplebank.png"
             title="SimpleBank"
             details="Go Backend"
-            ProjectUrl="/tbc"
+            ProjectUrl="/simplebank"
+            rating={5}
           />
         </div>
       </div>

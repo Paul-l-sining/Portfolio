@@ -6,7 +6,7 @@ import { IoMdRadioButtonOn } from "react-icons/io";
 import Link from "next/link";
 import Head from "next/head";
 
-function tbc() {
+function Facebowl() {
   return (
     <div className="w-full">
       <Head>
@@ -24,28 +24,60 @@ function tbc() {
           layout="fill"
           ƒ
           objectFit="cover"
-          src="/showcases/tbc.jpg"
+          src="/showcases/facebowl.png"
           alt="/netflix-showcase"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full translate-y-[-50%] text-white p-4 z-10">
-          <h2 className="py-2">Project name...</h2>
-          <h3>Technologies...</h3>
+          <h2 className="py-2">Facebowl not Facebook</h2>
+          <h3>
+            TypeScript / React / Chakra UI / GraphQL / Apollo Server / Prisma /
+            MySQL / Redis
+          </h3>
         </div>
       </div>
 
-      <div className="max-w-[1240px] p-2 grid lg:grid-cols-5 gap-8 pt-8 mx-2">
+      <div className="max-w-[1240px] p-2 grid lg:grid-cols-5 gap-8 pt-8 mx-6">
         <div className="lg:col-span-4">
           <p className="text-xl tracking-wider uppercase text-[#5651e5]">
             Project
           </p>
           <h2 className="py-2 text-gray-600">Overview</h2>
-          <p className="py-2 text-gray-600">Description...</p>
-          <a href="" target="_blank">
+          <p className="py-2 text-gray-600">
+            A simple to-do list app built with vanilla JavaScript. Just like any
+            other beginner who just started to learn coding, I chose this app to
+            strengthen the fundementals. But unlike any other to-do lists that
+            you can easily find on the internet, I added some
+            <span className="text-[#5651e5] font-bold uppercase">
+              {" "}
+              special sauce{" "}
+            </span>{" "}
+            to stand out from the crowd.
+          </p>
+
+          <h2 className="py-2 text-gray-600 text-2xl">Features</h2>
+          <ul className="list-disc ml-5">
+            <li>Allow Create/Delete a To-Do on the task board.</li>
+            <li>Allow Drag-n-Drop to sort the To-Dos.</li>
+            <li className="text-[#5651e5]">
+              Use trigonometry to calculate the angle so the Simpson&apos;s
+              eyeballs will always follow the mouse cursor.
+            </li>
+          </ul>
+
+          <a
+            href="https://lucent-tulumba-bce44d.netlify.app/"
+            rel="noreferrer"
+            target="_blank"
+          >
             <button className="px-8 py-2 mt-4 mr-8 hover:scale-105 duration-300">
               Demo
             </button>
           </a>
-          <a href="" target="_blank">
+          <a
+            href="https://github.com/pawpaw2022/vanilla-todo-list"
+            rel="noreferrer"
+            target="_blank"
+          >
             <button className="px-8 py-2 mt-4 hover:scale-105 duration-300">
               Code
             </button>
@@ -57,19 +89,13 @@ function tbc() {
             <p className="text-center font-bold pb-2">Technologies</p>
             <div className="grid grid-cols-3 lg:grid-cols-1">
               <p className="flex text-gray-600 py-2 items-center">
-                <IoMdRadioButtonOn className="pr-1" /> Mike
+                <IoMdRadioButtonOn className="pr-1" /> HTML5
               </p>
               <p className="flex text-gray-600 py-2 items-center">
-                <IoMdRadioButtonOn className="pr-1" /> Lucas
+                <IoMdRadioButtonOn className="pr-1" /> Sass
               </p>
               <p className="flex text-gray-600 py-2 items-center">
-                <IoMdRadioButtonOn className="pr-1" /> Will
-              </p>
-              <p className="flex text-gray-600 py-2 items-center">
-                <IoMdRadioButtonOn className="pr-1" /> Dustin
-              </p>
-              <p className="flex text-gray-600 py-2 items-center">
-                <IoMdRadioButtonOn className="pr-1" /> El
+                <IoMdRadioButtonOn className="pr-1" /> JavaScript
               </p>
             </div>
           </div>
@@ -85,4 +111,4 @@ function tbc() {
   );
 }
 
-export default tbc;
+export default Facebowl;

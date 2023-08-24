@@ -3,8 +3,9 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Rating from "./Rating";
 
-function ProjectItem({ src, title, details, ProjectUrl }) {
+function ProjectItem({ src, title, details, ProjectUrl, rating }) {
   return (
     <div className="relative flex items-center p-4 justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hvr-shutter-in-horizontal">
       <Image
@@ -18,7 +19,10 @@ function ProjectItem({ src, title, details, ProjectUrl }) {
         <h3 className="text-2xl text-white tracking-wider text-center">
           {title}
         </h3>
-        <p className="pb-4 pt-2 text-white text-center">{details}</p>
+        <p className="my-2 text-white text-center">{details}</p>
+        <div className="flex flex-col">
+          <Rating rating={rating} />
+        </div>
         <Link href={ProjectUrl}>
           <p className="text-center py-3 px-4 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
             More Info
