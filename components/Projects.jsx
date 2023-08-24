@@ -13,10 +13,10 @@ function Projects() {
         <h2 className="py-4">What I&apos;ve Built</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
-            src="netflix.png"
+            src="to-do.png"
             title="To-do List"
             details="HTML, CSS, JavaScript"
-            ProjectUrl="/netflix"
+            ProjectUrl="/to-do-list"
           />
           <ProjectItem
             src="tbc.jpg"

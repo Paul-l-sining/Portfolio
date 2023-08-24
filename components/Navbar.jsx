@@ -3,10 +3,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  AiOutlineMenu,
-  AiOutlineClose,
-} from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useRouter } from "next/router";
 import ContactIcons from "./ContactIcons";
 
@@ -18,7 +15,13 @@ const Navbar = () => {
   const router = useRouter();
 
   useEffect(() => {
-    const allRoutes = ["/netflix", "/tbc"];
+    const allRoutes = [
+      "/to-do-list",
+      "/facebowl",
+      "/simplebank",
+      "pokedex",
+      "/tbc",
+    ];
     setNavBg(allRoutes.includes(router.asPath) ? "transparent" : "#ecf0f3");
     setLinkColor(allRoutes.includes(router.asPath) ? "#ecf0f3" : "#1f2937");
   }, [router]);
@@ -59,9 +62,7 @@ const Navbar = () => {
           />
         </Link>
         <div>
-          <ul 
-          style={{ color: `${linkColor }`}} 
-          className="hidden md:flex">
+          <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
             <Link href="/">
               <li className="ml-10 text-sm uppercase hover:scale-105 duration-100	">
                 Home
@@ -92,9 +93,7 @@ const Navbar = () => {
             className="md:hidden cursor-pointer hover:scale-105 duration-100"
             onClick={handleToggle}
           >
-            <AiOutlineMenu 
-            style={{ color: `${linkColor }`}} 
-            size="25px" />
+            <AiOutlineMenu style={{ color: `${linkColor}` }} size="25px" />
           </div>
         </div>
       </div>
@@ -136,7 +135,7 @@ const Navbar = () => {
           <div className="border-b border-gray-300 my-4">
             <p className="w-[85%] md:w-[90%] py-4">
               <span className="italic">
-              &quot;Dedication makes dreams come true.&quot;
+                &quot;Dedication makes dreams come true.&quot;
               </span>
               -- Kobe Bryant
             </p>
@@ -174,7 +173,7 @@ const Navbar = () => {
             <p className="uppercase tracking-widest text-[#5651e5]">
               let&apos;s connect
             </p>
-            <ContactIcons size='p-5'/>
+            <ContactIcons size="p-5" />
           </div>
         </div>
       </div>

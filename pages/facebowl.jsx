@@ -6,7 +6,7 @@ import { IoMdRadioButtonOn } from "react-icons/io";
 import Link from "next/link";
 import Head from "next/head";
 
-function netflix() {
+function tbc() {
   return (
     <div className="w-full">
       <Head>
@@ -24,12 +24,12 @@ function netflix() {
           layout="fill"
           ƒ
           objectFit="cover"
-          src="/showcases/netflix.png"
+          src="/showcases/tbc.jpg"
           alt="/netflix-showcase"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full translate-y-[-50%] text-white p-4 z-10">
-          <h2 className="py-2">Netflix Clone</h2>
-          <h3>React JS / Tailwind / Firebase</h3>
+          <h2 className="py-2">Project name...</h2>
+          <h3>Technologies...</h3>
         </div>
       </div>
 
@@ -39,22 +39,13 @@ function netflix() {
             Project
           </p>
           <h2 className="py-2 text-gray-600">Overview</h2>
-          <p className="py-2 text-gray-600">
-            A netflix clone app made with ReactJS as frontend and firebase as backend. 
-            I chose to make this app is because it largely boosted my skills on many aspects such as CSS, React, Typescript, API key, database authorization and CRUD and more. 
-            The user can sign in / sign up an account with their email and password, and add the movies to their favourite list, just like how you do it on Netflix. 
-            Thanks to the Firebase, the user can always log back into their account and check the listed movies as they are all stored in the backend instead of the memory.
-          </p>
-          <a href="https://netflix-clone-4f0fa.firebaseapp.com" rel="noreferrer" target="_blank">
+          <p className="py-2 text-gray-600">Description...</p>
+          <a href="" target="_blank">
             <button className="px-8 py-2 mt-4 mr-8 hover:scale-105 duration-300">
               Demo
             </button>
           </a>
-          <a
-            href="https://github.com/Paul-l-sining/Netflix-Clone"
-            rel="noreferrer"
-            target="_blank"
-          >
+          <a href="" target="_blank">
             <button className="px-8 py-2 mt-4 hover:scale-105 duration-300">
               Code
             </button>
@@ -66,19 +57,19 @@ function netflix() {
             <p className="text-center font-bold pb-2">Technologies</p>
             <div className="grid grid-cols-3 lg:grid-cols-1">
               <p className="flex text-gray-600 py-2 items-center">
-                <IoMdRadioButtonOn className="pr-1" /> React
+                <IoMdRadioButtonOn className="pr-1" /> Mike
               </p>
               <p className="flex text-gray-600 py-2 items-center">
-                <IoMdRadioButtonOn className="pr-1" /> Tailwind
+                <IoMdRadioButtonOn className="pr-1" /> Lucas
               </p>
               <p className="flex text-gray-600 py-2 items-center">
-                <IoMdRadioButtonOn className="pr-1" /> Typescript
+                <IoMdRadioButtonOn className="pr-1" /> Will
               </p>
               <p className="flex text-gray-600 py-2 items-center">
-                <IoMdRadioButtonOn className="pr-1" /> Firebase
+                <IoMdRadioButtonOn className="pr-1" /> Dustin
               </p>
               <p className="flex text-gray-600 py-2 items-center">
-                <IoMdRadioButtonOn className="pr-1" /> The Movie Database API
+                <IoMdRadioButtonOn className="pr-1" /> El
               </p>
             </div>
           </div>
@@ -94,4 +85,4 @@ function netflix() {
   );
 }
 
-export default netflix;
+export default tbc;

@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 function About() {
   return (
@@ -38,11 +39,11 @@ function About() {
             other tech stack to adapt to the industry needs.
           </p>
 
-          <a href="/#projects">
+          <Link href="/#projects">
             <p className="py-2 text-gray-600 underline cursor-pointer">
               Check out some of my latest projects.
             </p>
-          </a>
+          </Link>
           <a href="https://github.com/pawpaw2022" target="_blank">
             <p className="py-2 text-gray-600 underline cursor-pointer">
               Check out my Github
