@@ -108,7 +108,7 @@ function Pokedex() {
               <p className="flex text-gray-600 py-2 items-center">
                 <IoMdRadioButtonOn className="pr-1" /> React Query
               </p>
-              <a href="https://pokeapi.co/" target="_blank">
+              <a href="https://pokeapi.co/" target="_blank" rel="noreferrer">
                 <p className="flex text-[#5651e5] py-2 items-center">
                   <IoMdRadioButtonOn className="pr-1" /> PokeAPI
                 </p>
