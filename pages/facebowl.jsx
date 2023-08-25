@@ -125,8 +125,8 @@ function Facebowl() {
                 avatars, bios, and basic information.{" "}
               </li>
               <li>
-                View Others' Profiles: Users can view profiles of other users to
-                learn more about them.
+                View Others&apos; Profiles: Users can view profiles of other
+                users to learn more about them.
               </li>
               <li>
                 {" "}

@@ -105,8 +105,8 @@ function Simplebank() {
                   different services
                 </li>
                 <li>
-                  TLS security: Let's Encrypt for obtaining and renewing free
-                  SSL/TLS certificates
+                  TLS security: Let&apos;s Encrypt for obtaining and renewing
+                  free SSL/TLS certificates
                 </li>
                 <li>
                   Continuous deployment (CD): GitHub Actions for deploying new
