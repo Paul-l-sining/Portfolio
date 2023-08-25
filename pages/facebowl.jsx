@@ -42,46 +42,129 @@ function Facebowl() {
             Project
           </p>
           <h2 className="py-2 text-gray-600">Overview</h2>
-          <p className="py-2 text-gray-600">
-            A simple to-do list app built with vanilla JavaScript. Just like any
-            other beginner who just started to learn coding, I chose this app to
-            strengthen the fundementals. But unlike any other to-do lists that
-            you can easily find on the internet, I added some
-            <span className="text-[#5651e5] font-bold uppercase">
-              {" "}
-              special sauce{" "}
-            </span>{" "}
-            to stand out from the crowd.
-          </p>
+          <div>
+            <h2 className="py-1 text-gray-500 text-2xl">Server Side</h2>
+            <p className="py-2 text-gray-600">
+              Welcome to Facebowl, a powerful and efficient blogging website
+              built using GraphQL and various modern technologies. This project
+              leverages GraphQL, Apollo Server, Prisma, MySQL, Redis,
+              TypeScript, and Node.js to provide a seamless and interactive
+              blogging experience.
+            </p>
 
-          <h2 className="py-2 text-gray-600 text-2xl">Features</h2>
-          <ul className="list-disc ml-5">
-            <li>Allow Create/Delete a To-Do on the task board.</li>
-            <li>Allow Drag-n-Drop to sort the To-Dos.</li>
-            <li className="text-[#5651e5]">
-              Use trigonometry to calculate the angle so the Simpson&apos;s
-              eyeballs will always follow the mouse cursor.
-            </li>
-          </ul>
+            <h2 className="py-2 text-gray-600 text-2xl">Features</h2>
+            <ul className="list-disc ml-5">
+              <li>
+                Create, update, and delete data using GraphQL mutations. Utilize
+                .
+              </li>
+              <li>
+                Fetch blog posts, comments, and user data with powerful GraphQL
+                queries.
+              </li>
+              <li>Efficiently cache frequently accessed posts using Redis.</li>
+              <li>
+                {" "}
+                TypeScript for type-safe development and enhanced code quality.
+              </li>
+              <li>Securely store user passwords using bcrypt.</li>
+              <li>
+                Authenticate users using JSON Web Tokens (JWT). Protect
+                sensitive data using environment variables
+              </li>
+            </ul>
 
-          <a
-            href="https://lucent-tulumba-bce44d.netlify.app/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <button className="px-8 py-2 mt-4 mr-8 hover:scale-105 duration-300">
-              Demo
-            </button>
-          </a>
-          <a
-            href="https://github.com/pawpaw2022/vanilla-todo-list"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <button className="px-8 py-2 mt-4 hover:scale-105 duration-300">
-              Code
-            </button>
-          </a>
+            <a
+              href="https://gql-blogging-website-production.up.railway.app/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <button className="px-8 py-2 mt-4 mr-8 hover:scale-105 duration-300">
+                Demo
+              </button>
+            </a>
+            <a
+              href="https://github.com/pawpaw2022/gql-blogging-website"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <button className="px-8 py-2 mt-4 hover:scale-105 duration-300">
+                Code
+              </button>
+            </a>
+          </div>
+          <div className="mt-10">
+            <h2 className="py-1 text-gray-500 text-2xl">Client Side</h2>
+            <p className="py-2 text-gray-600">
+              Welcome to Facebowl, a blogging website where users can create,
+              view, update, and interact with posts and profiles. This React app
+              is built using the latest technologies to provide a seamless and
+              engaging user experience.
+            </p>
+
+            <h2 className="py-2 text-gray-600 text-2xl">Features</h2>
+            <ul className="list-disc ml-5">
+              <li>
+                User Authentication: Users can sign up, sign in, and log out
+                using JWT-based authentication. Certain actions require
+                authentication, while others are accessible without logging in.
+              </li>
+              <li>
+                {" "}
+                View Posts: Users can view posts created by other users.{" "}
+              </li>
+              <li>
+                Create, Update, Delete Posts: Authenticated users can create new
+                posts, update their own posts, and delete their posts.{" "}
+              </li>
+              <li>
+                {" "}
+                Like, Unlike Posts: Authenticated users can like and unlike
+                posts.{" "}
+              </li>
+              <li>
+                Commenting: Users can leave comments on posts, edit their
+                comments, and delete comments.
+              </li>
+              <li>
+                {" "}
+                Profile Management: Users can edit their profiles, change
+                avatars, bios, and basic information.{" "}
+              </li>
+              <li>
+                View Others' Profiles: Users can view profiles of other users to
+                learn more about them.
+              </li>
+              <li>
+                {" "}
+                UI Using Chakra UI: The user interface is designed using Chakra
+                UI, providing a modern and responsive design.{" "}
+              </li>
+              <li>
+                GraphQL Client: Utilizes a GraphQL client to interact with the
+                backend API.
+              </li>
+            </ul>
+
+            <a
+              href="gql-blogging-website-client.vercel.app"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <button className="px-8 py-2 mt-4 mr-8 hover:scale-105 duration-300">
+                Demo
+              </button>
+            </a>
+            <a
+              href="https://github.com/pawpaw2022/gql-blogging-website-client"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <button className="px-8 py-2 mt-4 hover:scale-105 duration-300">
+                Code
+              </button>
+            </a>
+          </div>
         </div>
 
         <div className="lg:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 duration-200 mx-4 lg:mx-0">
@@ -89,13 +172,28 @@ function Facebowl() {
             <p className="text-center font-bold pb-2">Technologies</p>
             <div className="grid grid-cols-3 lg:grid-cols-1">
               <p className="flex text-gray-600 py-2 items-center">
-                <IoMdRadioButtonOn className="pr-1" /> HTML5
+                <IoMdRadioButtonOn className="pr-1" /> Typescript
               </p>
               <p className="flex text-gray-600 py-2 items-center">
-                <IoMdRadioButtonOn className="pr-1" /> Sass
+                <IoMdRadioButtonOn className="pr-1" /> React 18
               </p>
               <p className="flex text-gray-600 py-2 items-center">
-                <IoMdRadioButtonOn className="pr-1" /> JavaScript
+                <IoMdRadioButtonOn className="pr-1" /> Chakra UI
+              </p>
+              <p className="flex text-gray-600 py-2 items-center">
+                <IoMdRadioButtonOn className="pr-1" /> GraphQL
+              </p>
+              <p className="flex text-gray-600 py-2 items-center">
+                <IoMdRadioButtonOn className="pr-1" /> Apollo Server
+              </p>
+              <p className="flex text-gray-600 py-2 items-center">
+                <IoMdRadioButtonOn className="pr-1" /> Prisma ORM
+              </p>
+              <p className="flex text-gray-600 py-2 items-center">
+                <IoMdRadioButtonOn className="pr-1" /> MySQL
+              </p>
+              <p className="flex text-gray-600 py-2 items-center">
+                <IoMdRadioButtonOn className="pr-1" /> Redis
               </p>
             </div>
           </div>
