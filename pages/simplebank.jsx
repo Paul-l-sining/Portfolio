@@ -120,7 +120,7 @@ function Simplebank() {
             className="px-8 py-2 mt-4 mr-8 hover:scale-105 duration-300"
             onClick={() => {
               NotificationManager.warning(
-                "As of 2023-09-01, the deployment of this project will be deleted from AWS as EKS is too expensive to maintain. The project is meant to be a learning experience and not a production-ready application.",
+                "As of 2023-09-01, the service of this project will be terminated from AWS as EKS is too expensive to maintain. The project is meant to be a learning experience and not a production-ready application.",
                 "Announcement",
                 10000
               );
