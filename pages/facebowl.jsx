@@ -43,7 +43,6 @@ function Facebowl() {
           </p>
           <h2 className="py-2 text-gray-600">Overview</h2>
           <div>
-            <h2 className="py-1 text-gray-500 text-2xl">Server Side</h2>
             <p className="py-2 text-gray-600">
               Welcome to Facebowl, a powerful and efficient blogging website
               built using GraphQL and various modern technologies. This project
@@ -51,6 +50,7 @@ function Facebowl() {
               TypeScript, and Node.js to provide a seamless and interactive
               blogging experience.
             </p>
+            <h2 className="py-1 text-gray-500 text-2xl">Server Side</h2>
 
             <h2 className="py-2 text-gray-600 text-2xl">Features</h2>
             <ul className="list-disc ml-5">
@@ -95,13 +95,6 @@ function Facebowl() {
           </div>
           <div className="mt-10">
             <h2 className="py-1 text-gray-500 text-2xl">Client Side</h2>
-            <p className="py-2 text-gray-600">
-              Welcome to Facebowl, a blogging website where users can create,
-              view, update, and interact with posts and profiles. This React app
-              is built using the latest technologies to provide a seamless and
-              engaging user experience.
-            </p>
-
             <h2 className="py-2 text-gray-600 text-2xl">Features</h2>
             <ul className="list-disc ml-5">
               <li>
@@ -147,7 +140,7 @@ function Facebowl() {
             </ul>
 
             <a
-              href="gql-blogging-website-client.vercel.app"
+              href="https://gql-blogging-website-client.vercel.app"
               rel="noreferrer"
               target="_blank"
             >

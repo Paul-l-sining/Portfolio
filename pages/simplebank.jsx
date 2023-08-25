@@ -5,6 +5,8 @@ import Image from "next/image";
 import { IoMdRadioButtonOn } from "react-icons/io";
 import Link from "next/link";
 import Head from "next/head";
+import { NotificationManager } from "react-notifications";
+import { NotificationContainer } from "react-notifications";
 
 function Simplebank() {
   return (
@@ -42,38 +44,93 @@ function Simplebank() {
           </p>
           <h2 className="py-2 text-gray-600">Overview</h2>
           <p className="py-2 text-gray-600">
-            A simple to-do list app built with vanilla JavaScript. Just like any
-            other beginner who just started to learn coding, I chose this app to
-            strengthen the fundementals. But unlike any other to-do lists that
-            you can easily find on the internet, I added some
-            <span className="text-[#5651e5] font-bold uppercase">
-              {" "}
-              special sauce{" "}
-            </span>{" "}
-            to stand out from the crowd.
+            The Simple Banking System is designed to provide basic banking
+            functionalities, including user sign-up, login, account creation,
+            and money transfers between accounts.
           </p>
 
           <h2 className="py-2 text-gray-600 text-2xl">Features</h2>
           <ul className="list-disc ml-5">
-            <li>Allow Create/Delete a To-Do on the task board.</li>
-            <li>Allow Drag-n-Drop to sort the To-Dos.</li>
-            <li className="text-[#5651e5]">
-              Use trigonometry to calculate the angle so the Simpson&apos;s
-              eyeballs will always follow the mouse cursor.
+            <li>
+              <h4>Database (DB)</h4>
+              <ul className="list-disc ml-5">
+                <li>Primary database: PostgreSQL</li>
+                <li>SQL generation: sqlc</li>
+                <li>Unit testing: Go testing package</li>
+                <li>
+                  Transaction handling: Database transactions for atomic actions
+                </li>
+                <li>
+                  Continuous integration (CI): GitHub Actions for automated
+                  testing with Go and PostgreSQL
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h4>REST APIs</h4>
+              <ul className="list-disc ml-5">
+                <li>
+                  Framework: Gin (a popular Go framework for building APIs)
+                </li>
+                <li>Configuration: Viper for loading configuration</li>
+                <li>
+                  Integration testing: Mock DB for comprehensive test coverage
+                </li>
+                <li>Password hashing: Bcrypt for secure password storage</li>
+                <li>Authentication: PASETO tokens for enhanced security</li>
+                <li>
+                  Middleware: Authentication middleware to protect specific
+                  routes
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h4>Deployment</h4>
+              <ul className="list-disc ml-5">
+                <li>Docker: Build Docker images for the application</li>
+                <li>Docker Compose: Orchestrating DB and API server startup</li>
+                <li>
+                  Continuous integration (CI): GitHub Actions for building and
+                  pushing images to AWS ECR
+                </li>
+                <li>Database migration: Migrate local DB to AWS RDS</li>
+                <li>Environment variables: Stored in AWS Secret Manager</li>
+                <li>
+                  Kubernetes: AWS EKS for container orchestration, managed with
+                  kubectl and k9s
+                </li>
+                <li>Custom domain: Achieved using AWS Route 53</li>
+                <li>
+                  Traffic routing: Kubernetes Ingress for directing traffic to
+                  different services
+                </li>
+                <li>
+                  TLS security: Let's Encrypt for obtaining and renewing free
+                  SSL/TLS certificates
+                </li>
+                <li>
+                  Continuous deployment (CD): GitHub Actions for deploying new
+                  commits to Kubernetes
+                </li>
+              </ul>
             </li>
           </ul>
 
-          <a
-            href="https://lucent-tulumba-bce44d.netlify.app/"
-            rel="noreferrer"
-            target="_blank"
+          <button
+            className="px-8 py-2 mt-4 mr-8 hover:scale-105 duration-300"
+            onClick={() => {
+              NotificationManager.warning(
+                "As of 2023-09-01, the deployment of this project will be deleted from AWS as EKS is too expensive to maintain. The project is meant to be a learning experience and not a production-ready application.",
+                "Announcement",
+                10000
+              );
+            }}
           >
-            <button className="px-8 py-2 mt-4 mr-8 hover:scale-105 duration-300">
-              Demo
-            </button>
-          </a>
+            Demo
+          </button>
+
           <a
-            href="https://github.com/pawpaw2022/vanilla-todo-list"
+            href="https://github.com/pawpaw2022/simplebank/"
             rel="noreferrer"
             target="_blank"
           >
@@ -88,13 +145,46 @@ function Simplebank() {
             <p className="text-center font-bold pb-2">Technologies</p>
             <div className="grid grid-cols-3 lg:grid-cols-1">
               <p className="flex text-gray-600 py-2 items-center">
-                <IoMdRadioButtonOn className="pr-1" /> HTML5
+                <IoMdRadioButtonOn className="pr-1" /> Go 1.20
               </p>
               <p className="flex text-gray-600 py-2 items-center">
-                <IoMdRadioButtonOn className="pr-1" /> Sass
+                <IoMdRadioButtonOn className="pr-1" /> PostgreSQL
               </p>
               <p className="flex text-gray-600 py-2 items-center">
-                <IoMdRadioButtonOn className="pr-1" /> JavaScript
+                <IoMdRadioButtonOn className="pr-1" /> SQLC
+              </p>
+              <p className="flex text-gray-600 py-2 items-center">
+                <IoMdRadioButtonOn className="pr-1" /> Github Actions
+              </p>
+              <p className="flex text-gray-600 py-2 items-center">
+                <IoMdRadioButtonOn className="pr-1" /> Gin
+              </p>
+              <p className="flex text-gray-600 py-2 items-center">
+                <IoMdRadioButtonOn className="pr-1" /> Mock DB
+              </p>
+              <p className="flex text-gray-600 py-2 items-center">
+                <IoMdRadioButtonOn className="pr-1" /> PASETO
+              </p>
+              <p className="flex text-gray-600 py-2 items-center">
+                <IoMdRadioButtonOn className="pr-1" /> Docker
+              </p>
+              <p className="flex text-gray-600 py-2 items-center">
+                <IoMdRadioButtonOn className="pr-1" /> Kubernetes
+              </p>
+              <p className="flex text-gray-600 py-2 items-center">
+                <IoMdRadioButtonOn className="pr-1" /> AWS ECR
+              </p>
+              <p className="flex text-gray-600 py-2 items-center">
+                <IoMdRadioButtonOn className="pr-1" /> AWS RDS
+              </p>
+              <p className="flex text-gray-600 py-2 items-center">
+                <IoMdRadioButtonOn className="pr-1" /> AWS EKS
+              </p>
+              <p className="flex text-gray-600 py-2 items-center">
+                <IoMdRadioButtonOn className="pr-1" /> AWS Route 53
+              </p>
+              <p className="flex text-gray-600 py-2 items-center">
+                <IoMdRadioButtonOn className="pr-1" /> TLS Certificate
               </p>
             </div>
           </div>
@@ -106,6 +196,7 @@ function Simplebank() {
           </Link>
         </div>
       </div>
+      <NotificationContainer />
     </div>
   );
 }
